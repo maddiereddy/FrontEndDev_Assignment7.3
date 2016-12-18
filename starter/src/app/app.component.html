@@ -1,0 +1,10 @@
+<my-header></my-header>
+<div>
+    <label>Role: </label>
+    <input #selectedRole type="text" name="role">
+    <button class='button' (click)="displayUserList(selectedRole.value)">Display</button>
+</div>
+
+
+<br>
+<my-user [selRole] = selectedRole.value></my-user>
